@@ -8,6 +8,7 @@ This repo contains an example business website that is built with [Gatsby](https
 ## Additions
 
 - Removed cloud media service dependencies
+- Standardize branding
 
 ## Prerequisites
 
