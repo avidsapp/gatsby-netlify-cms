@@ -42,7 +42,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     postOrPage.forEach(edge => {
       let component, pathName;
-      if (edge.node.frontmatter.templateKey === "home-page") {
+      if (edge.node.frontmatter.templateKey === "index-page") {
         pathName = "/";
         component = path.resolve(`src/pages/index.js`);
       } else {
