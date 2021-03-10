@@ -6,7 +6,7 @@
 
 ## Additional Features
 
--
+- Netlify forms
 
 ## TODO
 
