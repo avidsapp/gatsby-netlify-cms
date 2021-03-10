@@ -6,7 +6,11 @@
 
 ## Additional Features
 
+<<<<<<< HEAD
 - Netlify forms
+=======
+-
+>>>>>>> origin/master
 
 ## TODO
 
