@@ -1,0 +1,332 @@
+@import "~bulma/sass/utilities/initial-variables";
+
+// Config vars
+$brand: #ED8585;
+$brand-invert: #ffffff;
+
+$primary: $brand;
+$primary-invert: $brand-invert;
+$secondary: #e65959;
+
+$body-color: #333333;
+$black: #2b2523;
+$white: #ffffff;
+$transparent: transparent;
+
+//Menu overrides
+$menu-item-color: $white-ter;
+$menu-item-hover-color: $black !important;
+$menu-item-hover-background-color: $black;
+$menu-item-active-color: $brand-invert;
+$menu-item-active-background-color:	$brand-invert;
+$menu-list-border-left: 1px solid $brand-invert;
+$menu-label-color: $white-ter;
+
+// Universals
+.section {
+  padding: 1.5rem 1rem !important;
+}
+.centered {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.margin-top-0 {
+  margin-top: 0 !important;
+}
+
+// buttons
+.btn {
+  display: inline-block;
+  padding: 12px 16px 10px;
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 1.25;
+  background-color: #fff;
+  border-radius: .25rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #CC3700;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 0 2px #CC3700;
+  box-shadow: inset 0 0 0 2px #f40;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+.button.special {
+  font-size: 2rem;
+}
+.button.special:hover {
+  background-color: $primary;
+  color: $white;
+}
+
+// Navbar
+.navbar .navbar-menu {
+  box-shadow: none !important;
+}
+.navbar-item .icon {
+  color: $primary;
+}
+// Override for use of svg's from https://simpleicons.org/
+.icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+.navbar-brand .navbar-item.logo {
+  padding: 0 1rem;
+}
+.menu-label {
+  font-size: 1em !important;
+  text-align: left;
+}
+.menu-list {
+  list-style: none !important;
+  text-align: left;
+}
+.social {
+  padding: 2em;
+}
+.social a {
+  padding: .5em .5em .3em .5em;
+  border-radius: 1em;
+  background-color: $white-ter;
+  margin: .5em;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline;
+}
+
+// Footer
+footer.footer {
+  padding: 3rem 0rem 0rem;
+  background-color: $brand;
+}
+footer .social {
+  padding: 2em;
+}
+footer .social a {
+  padding: 3.5em .5em .3em .5em;
+  border-radius: 1em;
+  background-color: $transparent;
+  margin: .5em;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline;
+}
+footer img {
+  width: 14rem;
+  height: 4rem;
+}
+footer .social img {
+  width: 4rem;
+  height: 4rem;
+}
+footer .footer-copyright,
+footer .footer-copyright a {
+  color: $white;
+}
+footer .footer-copyright a:hover {
+  text-decoration: underline;
+}
+// Content
+.content .taglist {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+}
+.content .taglist li {
+    padding: 0 2rem 1rem 0;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+// Full-width images
+.full-width-image-container {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 2em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-width-image {
+  width: 100vw;
+  height: 400px;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-width-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 452px;
+  background-image: linear-gradient(120deg, $primary, $secondary);
+  opacity: .5;
+}
+
+// hero banner
+.hero-banner {
+  display: flex;
+  z-index: 1;
+  line-height: 1;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: $transparent;
+  padding: 2rem 2rem;
+}
+.hero-banner h1 {
+  color: $white;
+  line-height: 1;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 0.25em;
+  text-shadow: -1px 2px 6px rgba(4,3,23,0.59);
+}
+.hero-banner h3 {
+  color: $white;
+  line-height: 1;
+  padding: 0.25em;
+  text-shadow: -1px 2px 6px rgba(4,3,23,0.59);
+}
+.hero-banner h3 a {
+  display: flex;
+  color: $white;
+  text-shadow: -1px 2px 6px rgba(4,3,23,0.59);
+}
+.hero-banner h3 a:hover {
+  text-decoration: underline;
+  text-shadow: -1px 2px 6px rgba(4,3,23,0.59);
+}
+
+// Blackboard
+.blackboard {
+  line-height: 1;
+  background-color: $black;
+  color: $white;
+  padding: 2rem 1rem;
+  margin: 0 4rem;
+  border-radius: 2rem;
+}
+.blackboard h1 {
+  color: $white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 3rem 0rem;
+}
+.blackboard h2 {
+  color: $white;
+  font-size: 1.25rem;
+  margin: 1.5rem 0rem;
+}
+.blackboard h3 {
+  color: $white;
+  font-size: 1.15rem;
+  margin: 1.5rem 0rem;
+}
+.blackboard h4 {
+  color: $white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1rem 0rem 0.5rem;
+}
+.blackboard h5 {
+  color: $white;
+  font-size: 1.15rem;
+  margin: 0rem 0rem 1rem;
+}
+.blackboard p {
+  color: $white;
+  font-size: 1rem;
+  margin: 1rem 0rem;
+}
+.closed h2 {
+  color: $primary;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 1rem 2rem 0;
+}
+
+// menu-page
+.menu-page.container {
+  width: 80vw;
+}
+.menu-page h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.menu-page .content h2 {
+  text-align: center;
+  margin-top: 4rem !important;
+  margin-bottom: 0rem !important;
+}
+.menu-page .content h3 {
+  display: inline-block;
+  width: 80%;
+  float: left;
+  font-size: 1.25rem;
+  margin-top: 2.5rem !important;
+  margin-bottom: 0.25rem;
+}
+.menu-page .content h4 {
+  display: inline-block;
+  width: 20%;
+  float: right;
+  text-align: right;
+  font-size: 1.25rem;
+  margin-top: 2.5rem !important;
+  margin-bottom: 0.25rem;
+}
+.menu-page .content h5 {
+  display: inline-block;
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu-page .content p {
+  display: inline-block;
+  width: 80%;
+  margin-bottom: 0 !important;
+}
+.menu-page .content ul {
+  display: inline-block;
+  width: 80%;
+  margin: 0 0 0 1.5rem !important;
+}
+
+
+@import "~bulma";
+
+
+@media (max-width: 700px) {
+  .blackboard {
+    margin: 0;
+  }
+  .full-width-image {
+    background-position-x: -400px !important;
+    background-size: cover;
+  }
+}
